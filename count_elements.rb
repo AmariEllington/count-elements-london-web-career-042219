@@ -8,7 +8,7 @@ def count_elements(array)
     value = value.to_h
 
   binding.pry
-    new_hash << (key, value)
+    
 
 
 
