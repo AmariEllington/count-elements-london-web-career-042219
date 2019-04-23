@@ -1,16 +1,7 @@
-
-
 def count_elements(array)
-  new_hash = {}
 
-count_elements = count_elements.to_h
+array.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
 
-  count_elements.map do {|element| counts[element] +1}
-    new_hash << (element)
-
-
-
-
-
-new_hash
 end
+
+count_elements(animals)
