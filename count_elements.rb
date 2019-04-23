@@ -1,10 +1,14 @@
+require 'pry'
+
 def count_elements(array)
   new_hash = {}
 
   count_elements.each do |key, value|
+    key = key.to_h
+    value = value.to_h
 
-
-    new_hash << key: value
+  binding.pry
+    new_hash << (key, value)
 
 
 
