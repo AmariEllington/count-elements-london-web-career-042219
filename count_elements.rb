@@ -5,8 +5,8 @@ def count_elements(array)
 
 count_elements = count_elements.to_h
 
-  count_elements.map do |element|
-    new_hash << element.count
+  count_elements.map do {|element| counts[element] +1}
+    new_hash << (element)
 
 
 
